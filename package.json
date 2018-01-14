@@ -1,0 +1,14 @@
+{
+  "name": "rapid-prototype",
+  "version": "1.0.1",
+  "description": "",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prompt-list": "^3.1.2",
+    "react": "^16.2.0"
+  },
+  "bin": "./bin/index.js"
+}

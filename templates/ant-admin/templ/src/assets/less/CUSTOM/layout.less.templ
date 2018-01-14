@@ -1,0 +1,86 @@
+
+.layout {
+    &.main {
+        min-height: 100vh;
+
+        & > .sider {
+            overflow-y: auto;
+            overflow-x: visible;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+        }
+
+        & > .layout {
+            margin-left: 200px;
+            &.collapsed {
+                margin-left: 64px;
+            }
+
+            & > .content {
+                margin: 16px 16px 0 16px;
+
+                & > .background {
+                    padding: 24px;
+                    background: #fff;
+                    min-height: 360px;
+                }
+            }
+
+            & > .footer {
+                text-align: center;
+                z-index: 600;
+            }
+        }
+    }
+}
+
+.affix.header {
+    background: #fff;
+    padding-right: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+.menu.trigger {
+    float: left;
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 16px 0 0;
+    cursor: pointer;
+    transition: color .3s;
+    margin: 0 2rem 0 -2rem;
+
+    &:hover {
+        color: #108ee9;
+    }
+}
+
+.menu.right {
+    float: right;
+
+    & > .actions {
+        display: inline;
+        padding: 15px 12px 15px 0;
+        border-right: 1px solid rgba(0, 0, 0, .25);
+    }
+    
+    & > .avatar {
+        display: inline;
+        font-size: 16px;
+        line-height: 64px;
+        padding: 0 16px 0 0;
+        // margin: 0 15px 0 0;
+
+        // Region: without_avatar
+        margin: 0 15px 0 20px;
+        // End of region
+    
+        // & > .img {
+        //     height: 64px;
+        //     line-height: 64px;
+        //     border-radius: 40px;
+        //     padding: 8px 10px 12px 10px;
+        //     vertical-align: middle;
+        // }
+    }
+}
